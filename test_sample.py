@@ -5,6 +5,13 @@ def func(a, b):
         return 0
 
 
+def sub(a, b):
+    if (a - b >= 0):
+        return a - b
+    else:
+        return 0
+
+
 def test_answer():
     assert func(1,2) == 3
 
