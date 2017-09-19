@@ -9,4 +9,4 @@ cache: pip
 # command to run tests
 script:
   - py.test -v
-  - echo "All done!"
+
