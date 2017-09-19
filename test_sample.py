@@ -1,29 +1,30 @@
-def func(a, b):
-    if (a + b >= 0):
-        return a + b
-    else:
-        return 0
+from mymod import add, sub
 
 
-def sub(a, b):
-    if (a - b >= 0):
-        return a - b
-    else:
-        return 0
+def test_add_positive():
+    assert add(1,2) == 3
 
 
-def test_answer():
-    assert func(1,2) == 3
+def test_add_negative():
+    assert add(1,-2) == 0
 
 
-def test_answer_neg():
-    assert func(1,-2) == 0
-
-
-def test_sub_answer():
+def test_sub_positive():
     assert sub(2,1) == 1
 
 
-def test_sub_answer_neg():
+def test_sub_negative():
     assert sub(1,3) == 0
+
+
+def test_add_defaults():
+    c = add()
+
+    assert c == 8.1
+
+
+def test_sub_defaults():
+    d = sub()
+
+    assert d == 5.9
 
