@@ -19,5 +19,12 @@ def test_sub_negative():
 
 def test_add_defaults():
     c = add()
+
     assert c == 8.1
+
+
+def test_sub_defaults():
+    d = sub()
+
+    assert d == 5.9
 
