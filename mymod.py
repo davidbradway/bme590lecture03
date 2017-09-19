@@ -22,6 +22,12 @@ def add(a=7, b=1.1):
 
 
 def sub(a, b):
+    """subtracts two numbers
+
+    :param a: default=7
+    :param b: default=1.1
+    :returns: something
+    """
     s = a - b
     if s < 0:
         return 0
