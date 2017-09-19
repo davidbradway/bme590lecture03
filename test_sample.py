@@ -15,3 +15,9 @@ def test_sub_positive():
 
 def test_sub_negative():
     assert sub(1,3) == 0
+
+
+def test_add_defaults():
+    c = add()
+    assert c == 8.1
+
