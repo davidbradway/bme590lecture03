@@ -8,5 +8,4 @@ install:
 cache: pip
 # command to run tests
 script:
-  - py.test -v
-
+  - py.test --pep8 --cov=. -v
